@@ -1,0 +1,15 @@
+<div class="container">
+    <div class="form-group">
+        
+        <label for="">Auteur</label>
+        <input type="text" class="form-control" [(ngModel)]="livre.auteur"/>
+    </div>
+    <div class="form-group"> 
+        <label for="">Libelle</label>
+        <input type="text" class="form-control" [(ngModel)]="livre.libelle"/>
+    </div>   
+    <input type="button"value="Ajouter" class="btn btn-primary" (click)="add();"/>
+
+    
+</div>
+

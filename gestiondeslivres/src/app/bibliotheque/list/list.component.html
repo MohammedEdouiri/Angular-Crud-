@@ -1,0 +1,15 @@
+<table class="container table-bordred">
+    <tr>
+<th>Code</th><th>Auteur</th>
+<th>Libelle</th><th>Actions</th>
+</tr>
+<tr *ngFor="let livre of livres; let i = index">
+    <td>{{livre.code}}</td>
+    <td>{{livre.auteur}}</td>
+    <td>{{livre.libelle}}</td>
+    <td>
+        <button class="btn btn-warning m-1" >Modifier</button>
+        <button class="btn btn-danger m-1 " (click)="remove(i)">Supprimer</button>
+    </td>
+    </tr>
+</table>
